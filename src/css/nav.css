@@ -1,0 +1,152 @@
+nav{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0; 
+    background: transparent;
+    position:fixed;
+    z-index:1
+
+}
+ 
+.nav-bar {
+    display:flex; 
+    justify-content: space-between; 
+    width:95%;
+    margin:0 auto;
+    padding-top:10px; 
+    background: inherit;
+}
+
+.logo img{
+    background: transparent;   
+    width: 123px;
+    height: 15px;
+    cursor: pointer;
+    margin-top: 7px; 
+}
+
+
+.menu-center,.menu-right { 
+        background: inherit; 
+    
+}
+.menuitems{
+    display:flex; 
+    background: inherit; 
+}
+
+.menuitems li{
+    list-style: none;
+    margin-top:9px;
+    background: inherit; 
+}
+.menuitems li a:hover, .menu-right h4:hover{ 
+    background-color: rgba(70, 62, 80, 0.2);
+    transition:  background-color 0.4s ease-in;
+}
+
+.menuitems li a {
+    text-decoration: none;
+    font-size:14.8px;
+    font-weight: 600; 
+    color: #26272c; 
+    padding: 9px 18px;
+    opacity:0.75; 
+    border-radius: 15px; 
+    background: inherit; 
+}
+
+@media(max-width:1200px){
+    .menu-center{
+        display:none
+    }
+}
+
+.menu-right{
+    display:flex;
+}
+
+.sidemenu{
+    position: fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    background-color: white;
+    width:310px;
+    z-index:2;  
+    transform: translateX(310px);  
+   
+}
+
+@keyframes show {
+    0% {
+      opacity:0;
+      transform: translateX(310px);
+    }
+    50% {
+        opacity: 0.3;
+    }
+    70% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity:1;
+        transform: translateX(0); 
+    } 
+}
+
+@keyframes hide {
+    0% {
+      opacity:0.6;
+      transform: translateX(0);
+    }
+    100% {
+        opacity:0;
+        transform: translateX(310px); 
+    
+}
+}
+.sidemenu ul li{
+    list-style: none;
+    padding:20px 0 20px 50px;
+    text-align: start;
+    border-bottom: 1px solid #ccc;
+}
+
+.sidemenu ul li a {
+    text-decoration: none;
+    font-weight:600;
+    color:#26272c;
+    opacity:0.75;
+    font-size:14.8px; 
+    cursor:pointer
+}
+
+.closeBtn > div {
+    background-color:#26272c; 
+    width:18px;
+    height: 3px;
+    position: relative;
+    top: 10px;
+}
+
+.closeBtn{
+    float:right;
+    margin-right:30px; 
+    cursor: pointer;
+    height:20px;
+    margin-top:-10px
+}
+
+.line-1 {
+   margin-bottom:-3px;
+   transform:rotate(45deg)
+}
+ 
+.line-2{
+   transform:rotate(-45deg)
+}
+.logo{
+    background: transparent;
+}

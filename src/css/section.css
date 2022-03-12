@@ -1,0 +1,80 @@
+.section{ 
+    height:100vh; 
+    width:100vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    display:flex;  
+    flex-direction: column;
+    justify-content: space-between; 
+}
+ 
+.model {
+    padding-top:15vh; 
+    background: transparent;
+}
+
+.model > p, .model >h1{ 
+    background: transparent;
+    padding:5px 0
+}
+.model h1 {
+    font-size:38px;
+    font-weight:600
+}
+
+.model p {
+    font-size:16.5px;
+    opacity:0.8
+}
+.touchless {
+    text-decoration: underline;
+    cursor:pointer;
+    background: transparent;
+}
+
+.ButtonsWrapper {
+    display:flex;
+    justify-content:center; 
+    background: transparent;
+}
+
+@media(max-width:768px) {
+    .ButtonsWrapper { 
+        flex-direction:column;
+        margin-bottom:60px
+    }
+    .ButtonsWrapper button{
+        align-self: center;
+        margin-bottom: 20px !important;
+    }
+}
+
+.buttons, .buttons > div{
+    background: transparent;
+}
+.ButtonsWrapper button{
+  width:250px;
+  padding:13px 0;
+  outline:none;
+  border-radius: 50px;
+  border:none;
+  font-weight:600;
+  opacity:0.85;
+  text-transform: uppercase;
+  font-size: 12px; 
+  margin:0 20px;
+  cursor:pointer;
+  margin-bottom: 110px;
+
+}
+
+.buttonRight{
+    background-color:rgba(244, 244, 244,0.65); 
+    color:rgba(0, 0, 0,0.85);
+}
+.buttonLeft{
+    color:rgba(255, 255, 255,0.95);
+    
+    background-color:rgba(23, 26, 32); 
+}

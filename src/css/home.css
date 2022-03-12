@@ -1,0 +1,31 @@
+.home{
+    background-color: aliceblue;
+}
+
+.downArrow{
+    position: absolute;
+    bottom: 0px;
+    background: transparent; 
+    width: 100%;
+}
+
+.downArrow img{
+    height:40px;
+    background: transparent; 
+    margin-bottom: 15px;
+    animation: bounce infinite 2s;
+    cursor:pointer
+}
+
+@keyframes bounce {
+    0%, 20%, 50%,70%,100%{
+        transform:  translateY(0px)
+    }
+    40%{ 
+        transform:  translateY(6px)
+    }
+    60%{ 
+        transform:  translateY(3px)
+    }
+  
+}
